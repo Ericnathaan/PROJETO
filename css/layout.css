@@ -1,0 +1,151 @@
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 8px;
+}
+
+/* ------------------------- */
+
+.bg-home{
+    position: relative;
+}
+
+
+.bg-home::before{
+    content: '';
+    display: block;
+    position: absolute;
+    background-image: linear-gradient(to bottom, rgba(6, 18 ,30 , 0.1), var(--dark)), url('../img/bg.svg');
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+    background-position: 50% 0;
+}
+
+/* ------------------------- */
+
+.hero{
+    color: var(--white-normal);
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-block-start: 14px;
+
+  
+
+}
+
+.hero h1{
+    text-align: center;
+    line-height: 150%;
+    max-width: 940px;
+    font-size: 48px;
+}
+
+.hero p{
+    text-align: center;
+    margin: 14px 0;
+}
+
+.button-contato{
+    padding: 14px 28px ;
+    color: var(--white-normal);
+    background-color: var(--red-normal);
+    border: 0;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 14px 0;
+}
+
+.button-contato:hover{
+    animation: scaleButton 0.8s alternate infinite;
+}
+
+@keyframes scaleButton{
+    from{
+        transform: scale(1);
+    }
+
+    to{
+        transform: scale(1.07);
+    }
+}
+
+@media screen and (max-width: 768px){
+    .hero{
+        min-height: 60vh;
+    }
+
+    .hero p{
+        font-size: 14px;
+    }
+     
+    
+
+    .hero h1{
+        font-size: 34px;
+        padding: 0 14px;
+        width: 100%;
+
+    
+    }
+}
+
+@media screen and (max-width: 480px){
+    .hero h1{
+        font-size: 24px;
+    }
+
+    .hero p{
+        font-size: 14px;
+    }
+}
+
+/* ------------------------- */
+
+.sobre{
+    background-color: var(--dark);
+    overflow:hidden;
+    color: var(--white-normal);
+
+}
+
+.sobre-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    padding: 34px 14px 64px 14px;
+}
+
+.sobre-content img{
+    max-width: 570px;
+    
+}
+
+.sobre-content div{
+    flex: 1;
+}
+
+.descricao-sobre h2{
+    font-size: 38px;
+    margin-bottom: 24px;
+}
+
+.descricao-sobre p {
+    margin-bottom: 14px;
+    line-height: 150%;
+}
+
+@media screen and (max-width: 768px){
+    .sobre-content{
+        flex-direction: column;
+    }
+}
