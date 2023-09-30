@@ -46,10 +46,6 @@ header {
 
   }
 
-  .header-button-mobile{
-    display: none;
-  }
-
   .header-button:hover{
     border: 1px solid var(--red-light);
     background-color:var(--red-light);
@@ -78,24 +74,8 @@ header {
     width: 300px;
     margin-top: 46px;
   }
-  .header-button-mobile{
-    display: flex;
-    position: relative;
-    top: 20px;
-    border: 1px solid var(--white-normal) ;
-    border-radius: 15%;
-    background-color: transparent;
-    transition: background-color 0.8s;
-
-  }
-
-  .header-button-mobile:hover{
-    border: 1px solid var(--red-light);
-    background-color:var(--red-light);
-  }
   
 
-  .header-button{
-    display: none;
-  }
+
+
 }

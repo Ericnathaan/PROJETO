@@ -29,11 +29,8 @@
                     <a href="#">
                         <i class="icon fa-brands fa-tiktok fa-2x"></i>
                     </a>
-
-                    <a href="#">
-                        <i class="header-button-mobile material-symbols-sharp" href="#">menu</i>
-                    </a>
-    
+                    
+                
                     
                 </div>
 
@@ -41,19 +38,21 @@
                 <div class="header-logo">
                     <img src="./img/Red Black Vintage Fauget Barbershop Logo.png" alt="logo">
                 </div>
-                <div>
-                    <a id="header-button" class="header-button material-symbols-sharp" href="#">menu</a>
-
-                    <div class="menu">
-                        <ul>
-                            <li><a href="#">Item 1</a></li>
-                            <li><a href="#">Item 2</a></li>
-                            <li><a href="#">Item 3</a></li>
-                            <li><a href="#">Item 4</a></li>
-                            <li><a href="#">Item 5</a></li>
-                        </ul>
-                    </div>
-                    
+                
+                <div class="menu-btn">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="#">Item 1</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#">Item 3</a></li>
+                        <li><a href="#">Item 4</a></li>
+                        <li><a href="#">Item 5</a></li>
+                        
+                    </ul>
                 </div>
             </nav>
 
@@ -69,7 +68,7 @@
     
     </div>
 
-    <section class="sobre">
+    <section class="sobre" id="sobre">
         <div class="container sobre-content">
             <div>
                 <img src="img/images.svg" alt="sobre a loja">
@@ -85,12 +84,15 @@
     </section>
 
     <script>
-        const menuButton = document.getElementById("#header-button");
-        const menu = document.querySelector(".menu");
-    
-        menuButton.addEventListener("click", () => {
-            menu.classList.toggle("ativo");
-        });
+document.addEventListener("DOMContentLoaded", function () {
+    const menuButton = document.querySelector(".menu-btn");
+    const menu = document.querySelector(".menu");
+
+    menuButton.addEventListener("click", function () {
+        menu.classList.toggle("active");
+    });
+});
+
     </script>
     
     
