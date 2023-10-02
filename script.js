@@ -4,17 +4,17 @@ const li = [...menu.querySelectorAll ("a")]
 console.log(li)
 
 menuButton.addEventListener("click", () => {
-    fazJonson()
+    activeMenu()
 });
 
 
-function fazJonson (){
+function activeMenu (){
     menu.classList.toggle("active");   
 }
 
 li.forEach(elemento =>{
     elemento.addEventListener('click', (evento) =>{
         evento.stopImmediatePropagation()
-        fazJonson()
+        activeMenu()
     })
 })
