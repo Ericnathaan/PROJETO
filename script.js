@@ -1,17 +1,20 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const menuButton = document.querySelector(".menu-btn");
-    const menu = document.querySelector(".menu");
+const menuButton = document.querySelector(".menu-btn");
+const menu = document.querySelector(".menu");
+const li = [...menu.querySelectorAll ("a")]
+console.log(li)
 
-    menuButton.addEventListener("click", function () {
-        menu.classList.toggle("active");
-    });
+menuButton.addEventListener("click", () => {
+    fazJonson()
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-    const customMenuButton = document.querySelector(".custom-menu-btn");
-    const customMenu = document.querySelector(".custom-menu");
 
-    customMenuButton.addEventListener("click", function () {
-        customMenu.classList.toggle("active");
-    });
-});
+function fazJonson (){
+    menu.classList.toggle("active");   
+}
+
+li.forEach(elemento =>{
+    elemento.addEventListener('click', (evento) =>{
+        evento.stopImmediatePropagation()
+        fazJonson()
+    })
+}) mexer mecher 
