@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,14 +10,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="./ico/Red-Black-Vintage-Fauget-Barbershop-Logo.ico" type="image/x-icon">
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <link rel="stylesheet" href="style.css">
-    <title>Barber</title>
+    <title>Macho's Barbershop</title>
 </head>
 <body>
     <div class="bg-home">
         <header>
             <nav class="conteudo-header container">
-                <div class="header-icons"> 
+                <div class="header-icons" data-aos="fade-down"> 
                     <a href="#">
                         <i class=" icon fa-brands fa-instagram fa-2x"></i>
                     </a>
@@ -34,11 +40,11 @@
                 </div>
 
                 
-                <div class="header-logo">
-                    <img src="./img/Red Black Vintage Fauget Barbershop Logo.png" alt="logo">
+                <div class="header-logo" data-aos="fade-up" data-aos-delay="300">
+                    <img src="./img/Red Black Vintage Fauget Barbershop Logo.png" alt="logo" data-aos="flip-up" data-aos-delay="300" data-duration="1500">
                 </div>
                 
-                <div class="menu-btn">
+                <div class="menu-btn" data-aos="fade-down">
                     <div class="bar"></div>
                     <div class="bar"></div>
                     <div class="bar"></div>
@@ -47,15 +53,15 @@
                     <ul>
                         <li><a href="#">Home</a></li>
                         <li><a href="#sobre">Sobre</a></li>
-                        <li><a href="#">Preços</a></li>
-                        <li><a href="#">Localização</a></li>
+                        <li><a href="#services">Serviços</a></li>
+                        <li><a href="#Localização">Localização</a></li>
                         <li><a href="#">Cadastro</a></li>
                         
                     </ul>
                 </div>
             </nav>
 
-            <main class="hero container">
+            <main class="hero container" data-aos="fade-up" data-aos-delay="400">
                 <h1>A BARBEARIA QUE ELEVA O SEU ESTILO A NOVOS PATAMARES</h1>
                 <p>Horário de funcionamento: 9;00 ás 19;00</p>
                 <a class="button-contato"  href="#" target="_blank">
@@ -67,13 +73,13 @@
     
     </div>
 
-    <section class="sobre" id="sobre">
+    <section class="sobre" id="sobre" >
         <div class="container sobre-content">
-            <div>
+            <div data-aos="zoom-in" data-aos-delay="100"> 
                 <img src="img/images.svg" alt="sobre a loja">
             </div>
 
-            <div class="descricao-sobre">
+            <div class="descricao-sobre" data-aos="zoom-out-left" data-aos-delay="250">
                 <h2>Sobre</h2>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis reprehenderit autem, ipsum, officia culpa iusto impedit illum, hic magni perspiciatis voluptatem. Quasi iste voluptatese!</p>
                 <p>Horário de funcionamento: <strong>9:00</strong> ás <strong>19:00</strong></p>
@@ -81,9 +87,96 @@
         </div>
         
     </section>
-    <script src="script.js">
-    </script>
-    
-    
+
+    <section  class="services" id="services">
+        <div class="services-content container">
+            <h2>Serviços</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia delectus aperiam eaque eum cum vero deserunt eius, exercitationem, soluta ex sunt quisquam consequatur debitis perspiciatis laboriosam voluptate dolore numquam perferendis.</p>
+        </div>
+
+        <section class="haircuts">
+
+            <div class="haircut" data-aos="fade-up" data-aos-delay="150">
+                <img src="./img/corte1.png" alt="Corte normal">
+                <div class="haircut-info">
+                    <strong>Corte Normal</strong>
+                    <button>
+                        R$ 45,00
+                    </button>
+                </div>
+            </div>
+            <div class="haircut" data-aos="fade-up" data-aos-delay="250">
+                <img src="./img/corte2.png" alt="Barba Completa">
+                <div class="haircut-info">
+                    <strong>Barba Completa</strong>
+                    <button>
+                        R$ 35,00
+                    </button>
+                </div>
+            </div>
+            <div class="haircut" id="haircut" data-aos="fade-up" data-aos-delay="400">
+                <img src="./img/corte3.png" alt="Corte e Barba">
+                <div class="haircut-info">
+                    <strong>Corte e Barba</strong>
+                    <button>
+                        R$ 80,00
+                    </button>
+                </div>
+            </div>
+
+        </section>
+    </section>
+
+    <div class="services" id="Localização">
+        <h2>Venha conhecer</h2>
+
+    </div>
+
+    <iframe 
+    width="100%"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3837.8463284180357!2d-48.06022122773921!3d-15.864672024683719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a2d67698be28f%3A0x438c0a182d9c5e10!2sSamambaia%20Shopping!5e0!3m2!1spt-BR!2sbr!4v1696281918737!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <footer class="footer"> 
+        <div class="footer-icons">
+            <a href="#">
+                <i class=" icon fa-brands fa-instagram fa-2x"></i>
+            </a>
+
+            <a href="#">
+                <i class=" icon fa-brands fa-facebook fa-2x"></i>
+            </a>
+
+            <a href="#">
+                <i class="icon fa-brands fa-tiktok fa-2x"></i>
+            </a>
+        </div>
+
+        
+        <div>
+        <img src="./img/Red Black Vintage Fauget Barbershop Logo.png" alt="logo">
+        </div>
+
+        <p> &copy;Copyright 2023 | Macho's Barbershop - Todos direitos reservados </p>
+        </footer>
+
+
+        
+            <a href="#" class="btn-init"data-aos="zoom-in-up" data-aos-delay="400"
+            >
+                <img src="./img/icons8-seta-simples-50.png" alt="botao">
+            </a>
+        
+
+
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+
 </body>
 </html>
