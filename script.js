@@ -17,4 +17,4 @@ li.forEach(elemento =>{
         evento.stopImmediatePropagation()
         fazJonson()
     })
-}) mexer mecher 
+})
