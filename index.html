@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@200;300;400;500;600&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
@@ -19,11 +25,12 @@
     <link rel="stylesheet" href="style.css">
     <title>Macho's Barbershop</title>
 </head>
+
 <body>
     <div class="bg-home">
         <header>
             <nav class="conteudo-header container">
-                <div class="header-icons" data-aos="fade-down"> 
+                <div class="header-icons" data-aos="fade-down">
                     <a href="#">
                         <i class=" icon fa-brands fa-instagram fa-2x"></i>
                     </a>
@@ -35,15 +42,16 @@
                     <a href="#">
                         <i class="icon fa-brands fa-tiktok fa-2x"></i>
                     </a>
-                    
-        
+
+
                 </div>
 
-                
+
                 <div class="header-logo" data-aos="fade-up" data-aos-delay="300">
-                    <img src="./img/Red Black Vintage Fauget Barbershop Logo.png" alt="logo" data-aos="flip-up" data-aos-delay="300" data-duration="1500">
+                    <img src="./img/Red Black Vintage Fauget Barbershop Logo.png" alt="logo" data-aos="flip-up"
+                        data-aos-delay="300" data-duration="1500">
                 </div>
-                
+
                 <div class="menu-btn" data-aos="fade-down">
                     <div class="bar"></div>
                     <div class="bar"></div>
@@ -56,7 +64,7 @@
                         <li><a href="#services">Serviços</a></li>
                         <li><a href="#Localização">Localização</a></li>
                         <li><a href="#">Cadastro</a></li>
-                        
+
                     </ul>
                 </div>
             </nav>
@@ -64,34 +72,94 @@
             <main class="hero container" data-aos="fade-up" data-aos-delay="400">
                 <h1>A BARBEARIA QUE ELEVA O SEU ESTILO A NOVOS PATAMARES</h1>
                 <p>Horário de funcionamento: 9;00 ás 19;00</p>
-                <a class="button-contato"  href="#" target="_blank">
+                <a class="button-contato" href="#" target="_blank">
                     Agendar Horário
                 </a>
                 </h1>
             </main>
         </header>
-    
+
     </div>
 
-    <section class="sobre" id="sobre" >
-        <div class="container sobre-content">
-            <div data-aos="zoom-in" data-aos-delay="100"> 
-                <img src="img/images.svg" alt="sobre a loja">
-            </div>
+    <!-- CARROSEL -->
+    <section class="sobre" id="sobre">
 
-            <div class="descricao-sobre" data-aos="zoom-out-left" data-aos-delay="250">
-                <h2>Sobre</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis reprehenderit autem, ipsum, officia culpa iusto impedit illum, hic magni perspiciatis voluptatem. Quasi iste voluptatese!</p>
-                <p>Horário de funcionamento: <strong>9:00</strong> ás <strong>19:00</strong></p>
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
             </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container sobre-content" data-aos="zoom-in" data-aos-delay="100">
+                        <div data-aos="zoom-in" data-aos-delay="100">
+                            <img src="img/images.svg" alt="sobre a loja">
+                        </div>
+
+                        <div class="descricao-sobre" data-aos="zoom-out-left" data-aos-delay="250">
+                            <h2>Sobre</h2>
+                            <p>Somos mais do que apenas uma barbearia; somos os guardiões do estilo e da confiança. Fundada com paixão e habilidade, nossa barbearia é um refúgio para homens que buscam mais do que apenas um corte de cabelo - é um lugar onde histórias são contadas, amizades são formadas e a autoestima é elevada.</p>
+                            <p>Horário de funcionamento: <strong>9:00</strong> ás <strong>19:00</strong></p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="carousel-item">
+                    <div class="container barba-content" data-aos="zoom-in" data-aos-delay="100">
+                        
+                        <div class="descricao-sobre" data-aos="zoom-out-left" data-aos-delay="250">
+                            <h2>Primeira visita? </h2>
+                            <p>Receba um desconto especial de boas-vindas na sua primeira barba conosco</p>
+                                <p>"Em nossa barbearia, a barba é a nossa paixão e a sua confiança é a nossa missão. Com mãos habilidosas e produtos de qualidade, moldamos cada barba com precisão e carinho, para que você se sinta confiante em sua própria pele."</p>
+                            </div>
+                            <div data-aos="zoom-in" data-aos-delay="100">
+                                <img src="img/barbearia-masculino-na-moda-corte-de-cabelo-perfeito-com-lamina-de-barbeiro-mestre-de-barbeiro-corta-cabelo-maduro-hipster-com-barba-no-cabeleireiro-brutal-hipster-com-bigode-fazendo-novo-penteado-cabelo-.avif" alt="sobre a loja">
+                            </div>
+                    </div>
+
+                </div>
+                <div class="carousel-item">
+                    <div class="container promocao-content" data-aos="zoom-in" data-aos-delay="100">
+                        <div data-aos="zoom-in" data-aos-delay="100">
+                            <img style="border-radius: 20px;" src="img/pexels-photo-7697363.webp" alt="sobre a loja">
+                        </div>
+
+                        <div class="descricao-sobre" data-aos="zoom-out-left" data-aos-delay="250">
+                            <h2>DIA DAS CRIANÇAS!</h2>
+                            <p>Promoção exclusiva para o Dia das Crianças: cortes de cabelo para os pequenos a partir de: <h3>R$19,99</h3> </p>
+                            <p>Agende agora e garanta o look perfeito!</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-        
     </section>
 
-    <section  class="services" id="services">
+
+    <!-- FIM CARROSEL -->
+
+
+    <section class="services" id="services">
         <div class="services-content container">
             <h2>Serviços</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia delectus aperiam eaque eum cum vero deserunt eius, exercitationem, soluta ex sunt quisquam consequatur debitis perspiciatis laboriosam voluptate dolore numquam perferendis.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia delectus aperiam eaque eum cum vero
+                deserunt eius, exercitationem, soluta ex sunt quisquam consequatur debitis perspiciatis laboriosam
+                voluptate dolore numquam perferendis.</p>
         </div>
 
         <section class="haircuts">
@@ -132,11 +200,12 @@
 
     </div>
 
-    <iframe 
-    width="100%"
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3837.8463284180357!2d-48.06022122773921!3d-15.864672024683719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a2d67698be28f%3A0x438c0a182d9c5e10!2sSamambaia%20Shopping!5e0!3m2!1spt-BR!2sbr!4v1696281918737!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe width="100%"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3837.8463284180357!2d-48.06022122773921!3d-15.864672024683719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a2d67698be28f%3A0x438c0a182d9c5e10!2sSamambaia%20Shopping!5e0!3m2!1spt-BR!2sbr!4v1696281918737!5m2!1spt-BR!2sbr"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-    <footer class="footer"> 
+    <footer class="footer">
         <div class="footer-icons">
             <a href="#">
                 <i class=" icon fa-brands fa-instagram fa-2x"></i>
@@ -151,21 +220,19 @@
             </a>
         </div>
 
-        
+
         <div>
-        <img src="./img/Red Black Vintage Fauget Barbershop Logo.png" alt="logo">
+            <img src="./img/Red Black Vintage Fauget Barbershop Logo.png" alt="logo">
         </div>
 
         <p> &copy;Copyright 2023 | Macho's Barbershop - Todos direitos reservados </p>
-        </footer>
+    </footer>
 
 
-        
-            <a href="#" class="btn-init"data-aos="zoom-in-up" data-aos-delay="400"
-            >
-                <img src="./img/icons8-seta-simples-50.png" alt="botao">
-            </a>
-        
+
+    <a href="#" class="btn-init" data-aos="zoom-in-up" data-aos-delay="400">
+        <img src="./img/icons8-seta-simples-50.png" alt="botao">
+    </a>
 
 
 
@@ -176,7 +243,13 @@
 
 
 
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
     <script src="script.js"></script>
-
 </body>
+
 </html>

@@ -146,6 +146,47 @@
     line-height: 150%;
 }
 
+
+.barba-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    padding: 34px;
+    margin-bottom: 90px
+;
+}
+
+
+.barba-content img{
+    max-width: 421px;
+    
+}
+
+.barba-content div{
+    flex: 1;
+}
+.promocao-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 34px;
+    margin-bottom: 108px
+;
+}
+
+
+.promocao-content img{
+    max-width: 721px;
+    
+}
+
+.promocao-content div{
+    flex: 1;
+}
+
+
 @media screen and (max-width: 768px){
     .sobre-content{
         flex-direction: column;
@@ -176,7 +217,7 @@
     line-height: 150%;
     margin-bottom: 14px;
     text-align: center;
-    max-width: 780px;
+    
 }
 
 .haircuts{
