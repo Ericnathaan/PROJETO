@@ -191,6 +191,12 @@
     .sobre-content{
         flex-direction: column;
     }
+    .promocao-content{
+        flex-direction: column;
+    }
+    .barba-content{
+        flex-direction: column;
+    }
 }
 
 /* ---------------- */
