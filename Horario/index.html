@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="horario.css">
+    <title>Agendamento de Barbearia</title>
+</head>
+<body>
+    <header>
+        <nav data-aos="fade-up" data-aos-delay="300">
+            <a href="../index.html"><img src="../img/Red Black Vintage Fauget Barbershop Logo (2).png" alt="" data-aos="flip-up"
+                data-aos-delay="300" data-duration="1500"></a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Marque seu horário</h1>
+            <form id="appointment-form">
+                <label for="date">Data:</label>
+                <input type="date" id="date" required>
+
+                <label for="horario">Horário</label>
+                <select id="horario">
+                    <option value="horas">9:00</option>
+                    <option value="horas">9:30</option>
+                    <option value="horas">10:00</option>
+                    <option value="horas">10:30</option>
+                    <option value="horas">11:00</option>
+                    <option value="horas">11:30</option>
+                    <option value="horas">12:00</option>
+                    <option value="horas">12:30</option>
+                    <option value="horas">13:00</option>
+                    <option value="horas">13:30</option>
+                    <option value="horas">14:00</option>
+                    <option value="horas">14:30</option>
+                    <option value="horas">15:00</option>
+                    <option value="horas">15:30</option>
+                    <option value="horas">16:00</option>
+                    <option value="horas">16:30</option>
+                    <option value="horas">17:00</option>
+                    <option value="horas">17:30</option>
+                    <option value="horas">18:00</option>
+                </select>
+
+        
+                <label for="service">Serviços:</label>
+                <select id="service" required>
+                    <option value="corte1">Corte Tradicional - 45,00</option>
+                    <option value="corte2">Corte Infatil - 19,99</option>
+                    <option value="barba1">Barba Completa - 35,00</option>
+                    <option value="barba2">Barba Alinhada - 20,00</option>
+                    <option value="sobrancelha">Sobrancelha - 20,00</option>
+                    <option value="face">Limpeza Facial - 80,00</option>
+                </select>
+        
+                <label for="barber">Barbeiro:</label>
+                <select id="barber" required>
+                    <option value="barbeiro1">João</option>
+                    <option value="barbeiro2">Paulo</option>
+                    <option value="barbeiro3">Gustavo</option>
+                    <option value="barbeiro4">Tiago</option>
+                    <option value="barbeiro5">Eric</option>
+                </select>
+                
+        
+                <button type="submit">Agendar</button>
+            </form>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
