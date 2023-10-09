@@ -36,7 +36,7 @@ AOS.init();
             // Após salvar os dados do usuário no Local Storage
     localStorage.setItem('userData', JSON.stringify(userData));
     
-    window.location.href = '../login/login.html';
+    window.location.href = 'https://ericnathaan.github.io/PROJETO/Login/login.html';
         });
 
 
