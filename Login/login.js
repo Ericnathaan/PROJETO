@@ -1,35 +1,44 @@
 AOS.init();
 
+document.addEventListener("DOMContentLoaded", function () {
+  const loginForm = document.querySelector(".form");
+  const emailInput = document.querySelector("#email");
+  const passwordInput = document.querySelector("#password");
 
-document.addEventListener('DOMContentLoaded', function () {
-    const loginForm = document.querySelector('.form');
-    const emailInput = document.querySelector('#email');
-    const passwordInput = document.querySelector('#password');
+  loginForm.addEventListener("submit", function (e) {
+    e.preventDefault(); // Evita o envio padrão do formulário
 
-    // Adicione um evento de envio ao formulário de login
-    loginForm.addEventListener('submit', function (e) {
-        e.preventDefault(); // Evita o envio padrão do formulário
+    const storedUserData = JSON.parse(localStorage.getItem("userData"));
 
-        // Recupera os dados do usuário do Local Storage
-        const storedUserData = JSON.parse(localStorage.getItem('userData'));
+    if (storedUserData) {
+      const storedEmail = storedUserData.email;
+      const storedPassword = storedUserData.password;
 
-        if (storedUserData) {
-            const storedEmail = storedUserData.email;
-            const storedPassword = storedUserData.password;
-
-            // Verifica se o email e a senha correspondem aos dados armazenados
-            if (emailInput.value === storedEmail && passwordInput.value === storedPassword) {
-                window.location.href = '../index.html';
-            } else {
-                alert('Credenciais inválidas. Tente novamente.');
-            }
+      if (
+        emailInput.value === storedEmail &&
+        passwordInput.value === storedPassword
+      ) {
+        localStorage.setItem("estaLogado", true);
+        const estaLogado = localStorage.getItem("estaLogado");
+        debugger;
+        if (estaLogado === "true") {
+          redirectToPage("http://127.0.0.1:5501/Horario/horario.html");
         } else {
-            alert('Você ainda não se cadastrou. Redirecionando para a página de cadastro.');
-            window.location.href = '../cadastro/cadastro.html';
+          redirectToPage("../index.html");
         }
-    });
+      } else {
+        alert("Credenciais inválidas. Tente novamente.");
+      }
+    } else {
+      alert(
+        "Você ainda não se cadastrou. Redirecionando para a página de cadastro."
+      );
+      redirectToPage("../cadastro/cadastro.html");
+    }
+  });
+
+  function redirectToPage(page) {
+    window.location.href = page;
+  }
 });
-
-
-
 

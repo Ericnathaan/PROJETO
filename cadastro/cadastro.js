@@ -33,11 +33,9 @@ AOS.init();
 
             alert('Cadastro realizado com sucesso!');
 
-            // Você pode redirecionar o usuário para a página de login aqui, se desejar.
             // Após salvar os dados do usuário no Local Storage
     localStorage.setItem('userData', JSON.stringify(userData));
     
-    // Redireciona o usuário para a página de login
     window.location.href = '../login/login.html';
         });
 

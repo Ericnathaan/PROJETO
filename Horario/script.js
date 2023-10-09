@@ -20,8 +20,11 @@ document.addEventListener("DOMContentLoaded", function () {
         // Salve os dados no Local Storage
         localStorage.setItem("appointmentData", JSON.stringify(appointmentData));
 
+        // Exiba um alerta antes de redirecionar
+        alert("Seu agendamento foi salvo com sucesso!");
+
         // Redirecione para outra página ou execute outras ações necessárias
-        // window.location.href = "outra_pagina.html";
+         window.location.href = "../index.html";
     });
 });
 
