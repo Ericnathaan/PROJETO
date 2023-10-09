@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const estaLogado = localStorage.getItem("estaLogado");
         debugger;
         if (estaLogado === "true") {
-          redirectToPage("http://127.0.0.1:5501/Horario/horario.html");
+          redirectToPage("https://ericnathaan.github.io/PROJETO/Horario/horario.html");
         } else {
           redirectToPage("../index.html");
         }
